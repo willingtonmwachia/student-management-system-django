@@ -1,0 +1,23 @@
+{% extends "student_management_system/base.html" %}
+
+{% block title %}Add Unit{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <h2>Add Unit</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="name">Unit Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="code">Unit Code:</label>
+                <input type="text" class="form-control" id="code" name="code" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Unit</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,4 @@
+Django>=4.2,<5.0
+djangorestframework>=3.14,<4.0
+psycopg2-binary>=2.9,<3.0  # For PostgreSQL, change if using another database
+python-decouple>=3.8,<4.0

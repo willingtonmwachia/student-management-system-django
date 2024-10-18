@@ -1,0 +1,23 @@
+{% extends "student_management_system/base.html" %}
+
+{% block title %}Admin Dashboard{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-3">
+        <div class="list-group">
+            <a href="{% url 'add_student' %}" class="list-group-item list-group-item-action">Add Student</a>
+            <a href="{% url 'add_teacher' %}" class="list-group-item list-group-item-action">Add Teacher</a>
+            <a href="{% url 'add_parent' %}" class="list-group-item list-group-item-action">Add Parent</a>
+            <a href="{% url 'add_course' %}" class="list-group-item list-group-item-action">Add Course</a>
+            <a href="{% url 'add_unit' %}" class="list-group-item list-group-item-action">Add Unit</a>
+            <a href="{% url 'add_exam' %}" class="list-group-item list-group-item-action">Add Exam</a>
+            <a href="{% url 'add_assignment' %}" class="list-group-item list-group-item-action">Add Assignment</a>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <h2>Welcome to the Admin Dashboard</h2>
+        <p>Manage your students, teachers, and courses from here.</p>
+    </div>
+</div>
+{% endblock %}
